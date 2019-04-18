@@ -1,6 +1,6 @@
 {
   "name": "global-this",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A cross engine globalThis.",
   "main": "cjs/index.js",
   "module": "esm/index.js",
@@ -11,7 +11,10 @@
     "esm": "cp index.js esm/ && echo 'export default globalThis;'>>esm/index.js",
     "min": "uglifyjs index.js -m -c -o min.js"
   },
-  "keywords": ["global", "this"],
+  "keywords": [
+    "global",
+    "this"
+  ],
   "author": "Andrea Giammarchi",
   "license": "ISC",
   "devDependencies": {
