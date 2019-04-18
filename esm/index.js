@@ -1,12 +1,15 @@
 (function (Object) {
-  if (typeof globalThis === 'undefined')
-    (Object.defineProperty(Object.prototype, '_T_', {
-      configurable: true,
-      get: function (self) {
-        self = this.self || this;
-        self.globalThis = self;
-        delete Object.prototype._T_;
-      }
-    }), _T_);
+  typeof globalThis !== 'object' && (
+    this ?
+      get() :
+      (Object.defineProperty(Object.prototype, '_T_', {
+        configurable: true,
+        get: get
+      }), _T_)
+  );
+  function get() {
+    this.globalThis = this;
+    delete Object.prototype._T_;
+  }
 }(Object));
 export default globalThis;
