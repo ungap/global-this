@@ -1,1 +1,1 @@
-!function(e){"undefined"==typeof globalThis&&(e.defineProperty(e.prototype,"_T_",{configurable:!0,get:function(){this.globalThis=this,delete e.prototype._T_}}),_T_)}(Object);
+!function(e){"undefined"==typeof globalThis&&(e.defineProperty(e.prototype,"_T_",{configurable:!0,get:function(){(this.window||this).globalThis=this,delete e.prototype._T_}}),_T_)}(Object);
