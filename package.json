@@ -1,6 +1,6 @@
 {
   "name": "@ungap/global-this",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "A cross engine globalThis.",
   "main": "cjs/index.js",
   "module": "esm/index.js",
