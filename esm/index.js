@@ -5,7 +5,7 @@
       configurable: true,
       get: function () {
         this.globalThis = this;
-        delete Object.prototype._T_;
+        delete this._T_;
       }
     }), _T_);
 }(Object));
