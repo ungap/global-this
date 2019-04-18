@@ -2,9 +2,9 @@
   if (typeof globalThis === 'undefined')
     (Object.defineProperty(Object.prototype, '_T_', {
       configurable: true,
-      get: function (window) {
-        window = this.window || this;
-        window.globalThis = window;
+      get: function (self) {
+        self = this.self || this;
+        self.globalThis = self;
         delete Object.prototype._T_;
       }
     }), _T_);
