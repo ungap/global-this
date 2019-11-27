@@ -4,6 +4,7 @@
   "description": "A cross engine globalThis.",
   "main": "cjs/index.js",
   "module": "esm/index.js",
+  "typings": "esm/index.d.ts",
   "unpkg": "min.js",
   "scripts": {
     "build": "npm run cjs && npm run esm && npm run min",
