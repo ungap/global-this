@@ -1,1 +1,1 @@
-!function(t){function e(){this.globalThis=this,delete t.prototype._T_}"object"!=typeof globalThis&&(this?e():(t.defineProperty(t.prototype,"_T_",{configurable:!0,get:e}),_T_))}(Object);
+!function(e){var t=e.prototype,i=t.__defineGetter__,l=e.defineProperty||function(e,t,l){l.value?e[t]=l.value:l.get&&i.call(e,t,l.get)};function o(){l(this,"globalThis",{value:this,writable:!0,enumerable:!1,configurable:!0}),delete t._T_}"object"!=typeof globalThis&&(this?o():(l(t,"_T_",{configurable:!0,get:o}),_T_))}(Object);
