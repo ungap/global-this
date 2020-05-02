@@ -2,14 +2,16 @@
   "name": "@ungap/global-this",
   "version": "0.3.1",
   "description": "A cross engine globalThis.",
-  "main": "cjs/index.js",
-  "module": "esm/index.js",
+  "main": "./cjs/index.js",
+  "module": "./esm/index.js",
   "unpkg": "min.js",
   "scripts": {
     "build": "npm run cjs && npm run esm && npm run min",
     "cjs": "cp index.js cjs/ && echo 'module.exports = globalThis;'>>cjs/index.js",
     "esm": "cp index.js esm/ && echo 'export default globalThis;'>>esm/index.js",
-    "min": "uglifyjs index.js -m -c -o min.js"
+    "min": "uglifyjs index.js -m -c -o min.js",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "test": "nyc node test/index.js"
   },
   "keywords": [
     "global",
@@ -18,6 +20,12 @@
   "author": "Andrea Giammarchi",
   "license": "ISC",
   "devDependencies": {
-    "uglify-js": "^3.4.9"
+    "nyc": "^15.0.1",
+    "uglify-js": "^3.9.1"
+  },
+  "type": "module",
+  "exports": {
+    "import": "./esm/index.js",
+    "default": "./cjs/index.js"
   }
 }
