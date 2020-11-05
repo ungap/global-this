@@ -8,7 +8,8 @@
       }), _T_)
   );
   function get() {
-    this.globalThis = this;
+    var me = this || self;
+    me.globalThis = me;
     delete Object.prototype._T_;
   }
 }(Object));
