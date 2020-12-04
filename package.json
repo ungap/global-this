@@ -27,5 +27,13 @@
   "exports": {
     "import": "./esm/index.js",
     "default": "./cjs/index.js"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ungap/global-this.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ungap/global-this/issues"
+  },
+  "homepage": "https://github.com/ungap/global-this#readme"
 }
